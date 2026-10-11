@@ -273,17 +273,25 @@ body {
 
 .polaroid-item {
   position: relative;
-  background: rgba(255, 255, 255, 0.92);
-  border-radius: 6px;
-  padding: 10px 10px 36px;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.98);
+  border-radius: var(--radius-md);
+  padding: 10px 10px 18px;
   box-shadow:
-    0 6px 18px rgba(109, 40, 217, 0.12),
-    0 2px 6px rgba(0, 0, 0, 0.05),
+    0 8px 24px rgba(109, 40, 217, 0.12),
+    0 2px 6px rgba(0, 0, 0, 0.04),
     inset 0 1px 0 rgba(255, 255, 255, 1);
   transform: rotate(var(--rot, -1.8deg));
   transition: transform var(--transition-spring), box-shadow var(--transition-base);
   cursor: pointer;
   flex-shrink: 0;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .polaroid-item:nth-child(odd) { --rot: -2deg; }
@@ -292,29 +300,49 @@ body {
 .polaroid-item:nth-child(5n) { --rot: 2.2deg; }
 
 .polaroid-item:hover {
-  transform: rotate(0deg) scale(1.04) translateY(-3px);
+  transform: rotate(0deg) scale(1.03) translateY(-3px);
   box-shadow:
     0 18px 45px rgba(109, 40, 217, 0.22),
     0 6px 18px rgba(59, 130, 246, 0.12);
   z-index: 10;
 }
 
+.polaroid-img-wrap {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: min(320px, 50vh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, rgba(255, 240, 245, 0.9), rgba(240, 235, 255, 0.9));
+}
+
 .polaroid-item img {
   width: 100%;
-  height: 155px;
+  max-width: 100%;
+  height: auto;
+  max-height: min(320px, 50vh);
   object-fit: cover;
+  object-position: center;
   display: block;
-  border-radius: 3px;
-  background: linear-gradient(135deg, var(--rose-200), var(--violet-200), var(--blue-200));
+  border-radius: var(--radius-sm);
+  transition: transform var(--transition-base);
+}
+
+.polaroid-item:hover img {
+  transform: scale(1.02);
 }
 
 .polaroid-caption {
   text-align: center;
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   color: var(--violet-400);
-  padding-top: 6px;
+  padding-top: 8px;
   line-height: 1;
 }
 
@@ -1168,5 +1196,22 @@ body {
   .jar-column {
     min-height: 440px;
     padding: 24px 14px;
+  }
+
+  #carousel-wrapper {
+    height: 380px;
+    padding: 12px 14px;
+  }
+
+  .polaroid-item {
+    max-width: 320px;
+  }
+
+  .polaroid-img-wrap {
+    max-height: min(260px, 45vh);
+  }
+
+  .polaroid-item img {
+    max-height: min(260px, 45vh);
   }
 }

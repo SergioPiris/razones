@@ -101,6 +101,12 @@ const Carousel = (() => {
   let currentY = 0;
   let halfHeight = 0;
 
+  function recalc() {
+    if (track) {
+      halfHeight = track.scrollHeight / 2;
+    }
+  }
+
   function buildItems() {
     track = document.getElementById("carousel-track");
     track.innerHTML = "";
@@ -108,14 +114,20 @@ const Carousel = (() => {
     doubled.forEach((src, i) => {
       const item = document.createElement("div");
       item.className = "polaroid-item";
+      const imgWrap = document.createElement("div");
+      imgWrap.className = "polaroid-img-wrap";
       const img = document.createElement("img");
       img.src = src;
       img.alt = `Foto ${(i % fotosCarrusel.length) + 1}`;
       img.loading = "lazy";
+      img.onload = () => {
+        recalc();
+      };
       const caption = document.createElement("div");
       caption.className = "polaroid-caption";
       caption.textContent = "♡";
-      item.appendChild(img);
+      imgWrap.appendChild(img);
+      item.appendChild(imgWrap);
       item.appendChild(caption);
       track.appendChild(item);
     });
@@ -133,16 +145,18 @@ const Carousel = (() => {
   function init() {
     buildItems();
     requestAnimationFrame(() => {
-      halfHeight = track.scrollHeight / 2;
+      recalc();
       animate();
     });
+
+    window.addEventListener("resize", recalc);
 
     const wrapper = document.getElementById("carousel-wrapper");
     wrapper.addEventListener("mouseenter", () => { speed = 0.08; });
     wrapper.addEventListener("mouseleave", () => { speed = 0.5; });
   }
 
-  return { init };
+  return { init, recalc };
 })();
 
 const Gallery = (() => {
