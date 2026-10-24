@@ -174,7 +174,7 @@ const Gallery = (() => {
       key: "together",
       dotClass: "together",
       emoji: "💙",
-      label: "Por qué quiero estar contigo",
+      label: "Por qué me gustas",
       allArray: null
     },
     {

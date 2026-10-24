@@ -1,31 +1,43 @@
 const porQueTeQuiero = [
-  "Porque tu risa ilumina mis días y tu presencia hace que todo sea mejor.",
+  "Porque puedo reirme contigo con cualqier cosa",
+  "Porque me haces sentir especial",
+  "Porque me tratas mejor que nadie",
+  "Porque me apoyas en todo lo que hago",
+  "Porque me encantan los piques que tenemos",
+  "Porque contigo puedo ser yo mismo",
+  "Porque eres la cosa mas mona, tierna, adorable y cute que existe",
+  "Porque me haces sentir que puedo con todo",
+  "Porque me envias stickers bien duros",
+  "Porque cuando estoy contigo se me olvidan todos los problemas",
 ];
 
 const porQueQuieroEstarContigo = [
-  "Porque quiero ser yo quien esté ahí cuando necesites a alguien. Quiero ser tu lugar seguro, tu refugio, tu ancla en los días de tormenta.",
-  "Porque imaginar el futuro solo tiene sentido si apareces en él. Cada plan, cada sueño, cada aventura —los quiero vivir a tu lado, Miranda.",
-  "Porque contigo descubrí lo que significa realmente sentirse acompañado. No es solo estar juntos; es sentir que alguien te entiende de verdad.",
-  "Porque quiero crecer contigo. Ver cómo cambias, aprender contigo, tropezar y levantarnos juntos. Eso es lo que quiero.",
-  "Porque mereces a alguien que te elija cada día, sin dudas, sin condiciones. Y yo quiero ser ese alguien para ti.",
-  "Porque hay una calma especial cuando estoy a tu lado que no he encontrado en ningún otro lugar del mundo.",
-  "Porque quiero que sepas que no importa lo que venga, yo prefiero enfrentarlo contigo que sin ti.",
-  "Porque cada vez que pienso en los momentos más felices de mi vida, tú estás en todos ellos.",
-  "Porque quiero seguir aprendiendo qué cosas te hacen feliz, y dedicar mi tiempo a hacerlas realidad.",
-  "Porque contigo, hasta las cosas más ordinarias se vuelven recuerdos que quiero guardar para siempre."
+  "Porque yo se que me hiciste que solo puedo pensar en ti",
+  "Porque tenemos el mismo humor rotisimo (cereales with vodka)",
+  "Porque me has demostrado que eres la mejor persona que existe",
+  "Porque me haces sentir que puedo con todo",
+  "Porque desde antes de ser novios, sentia que estando contigo, estaba en casa",
+  "Porque me encanta los ojitos que poner al reirte (mi china fav)",
+  "Porque me haces reir con cualquier tonteria",
+  "Porque tenemos las mismas opiniones en todo",
+  "Porque no se como no podria estar contigo",
+  "Porque puedo hablarte de caulqueir cosa y siempre me escuchas",
 ];
 
 const letrasDeCancionesParaMiranda = [
-  "\"Te voy a amar así, como nadie te ha querido, te voy a amar así, con todo lo que tengo.\" — Cada vez que escucho esto, pienso en ti, Miranda.",
-  "\"You are the best thing that's ever been mine.\" — Taylor Swift. Simple, directo, y completamente verdadero.",
-  "\"Contigo aprendí que existen nuevas y mejores emociones. Contigo aprendí a conocer un mundo nuevo de ilusiones.\" — Armando Manzanero.",
-  "\"I found a love for me. Darling, just dive right in and follow my lead.\" — Ed Sheeran supo exactamente cómo describirte.",
-  "\"Eres todo en mí, lo que siempre soñé. Eres lo que más me gusta de la vida.\" — Una frase sencilla con el peso de todo lo que siento.",
-  "\"When I look into your eyes, it's like watching the night sky, or a beautiful sunrise.\" — Bruno Mars sabía.",
-  "\"Mil años podrían pasar y yo seguiría aquí, encontrándote a ti una y otra vez.\" — Porque así es exactamente como me siento.",
-  "\"Tú eres lo mejor que me ha pasado, lo más bello que existe en mi mundo.\" — Una canción que parece escrita para este momento.",
-  "\"All of me loves all of you, all your curves and all your edges, all your perfect imperfections.\" — John Legend, escribiendo sobre ti.",
-  "\"Vivo en ti, tu piel es mi lugar, tus besos mi canción, tus ojos mi hogar.\" — Versos que resumen perfectamente lo que eres para mí."
+  "\"Que me basta con mirarte, saber que te quiero pa siempre\" — Me basta con mirarte Remix, Blake",
+  "\"Con tus iniciales en mi piel moriré\" — Sintigo Lucho RK",
+  "\"Sos era curita de amor si la herida me sangra\" — Ojala Milo J",
+  "\"A la luna le pregunto si estás bien cuando no estoy, mientras que desde acá estoy contando los días como un preso\" — Solo por vos, Trueno",
+  "\"Y solo mírame con esos ojitos lindos\" - Ojitos lindos, Bad Bunny ",
+  "\"Eres la verdad tras la mirada magia oscura, más pasa mi vida, más me miras, más me curas, eres pura, como un do-mi-sol en manos de Vivaldi\" - Eres mi luz, Blake ",
+  "\"Contigo bailaré hasta que me tropiece aunque se me pase el tiempo, hasta no saber lo que digo\" - Contigo, Lucho RK ",
+  "\"Por ti muero, por ti mato, por ti vivo\" - Por ti, Natos y Waor ",
+  "\"Por eso shoty yo muero, por ti quemaría todo mi dinero\" - Shorty, Fernando Costa ",
+  "\"La vida es una fiesta que un dia termina y fuiste tu mi baile inolvidable\" - Baile inolvidable, Bad Bunny ",
+
+
+
 ];
 
 const fotosCarrusel = [
@@ -37,7 +49,7 @@ const fotosCarrusel = [
   "./assets/foto6.jpg",
   "./assets/foto7.jpg",
   "./assets/foto8.jpg",
-  "./assets/foto9.jpg",
-  "./assets/foto10.jpg"
+  // "./assets/foto9.jpg",
+  // "./assets/foto10.jpg"
 ];
 
